@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		829A157D261C43DE00D9C6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A157C261C43DE00D9C6CD /* AppDelegate.swift */; };
 		829A157F261C43DE00D9C6CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A157E261C43DE00D9C6CD /* SceneDelegate.swift */; };
-		829A1581261C43DE00D9C6CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A1580261C43DE00D9C6CD /* ViewController.swift */; };
 		829A1584261C43DE00D9C6CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829A1582261C43DE00D9C6CD /* Main.storyboard */; };
 		829A1586261C43E200D9C6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829A1585261C43E200D9C6CD /* Assets.xcassets */; };
 		829A1589261C43E200D9C6CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829A1587261C43E200D9C6CD /* LaunchScreen.storyboard */; };
+		A0D0431626247D7E00E6F6B7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D0431526247D7E00E6F6B7 /* HomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		829A1579261C43DE00D9C6CD /* Learn iOS Pattern MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn iOS Pattern MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		829A157C261C43DE00D9C6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		829A157E261C43DE00D9C6CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		829A1580261C43DE00D9C6CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		829A1583261C43DE00D9C6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		829A1585261C43E200D9C6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		829A1588261C43E200D9C6CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		829A158A261C43E200D9C6CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D0431526247D7E00E6F6B7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,31 @@
 		829A157B261C43DE00D9C6CD /* Learn iOS Pattern MVC */ = {
 			isa = PBXGroup;
 			children = (
+				A0D04312262479E700E6F6B7 /* Home */,
+				A0D04313262479F300E6F6B7 /* Plugin */,
 				829A157C261C43DE00D9C6CD /* AppDelegate.swift */,
 				829A157E261C43DE00D9C6CD /* SceneDelegate.swift */,
-				829A1580261C43DE00D9C6CD /* ViewController.swift */,
 				829A1582261C43DE00D9C6CD /* Main.storyboard */,
 				829A1585261C43E200D9C6CD /* Assets.xcassets */,
 				829A1587261C43E200D9C6CD /* LaunchScreen.storyboard */,
 				829A158A261C43E200D9C6CD /* Info.plist */,
 			);
 			path = "Learn iOS Pattern MVC";
+			sourceTree = "<group>";
+		};
+		A0D04312262479E700E6F6B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A0D0431526247D7E00E6F6B7 /* HomeVC.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		A0D04313262479F300E6F6B7 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Plugin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				829A1581261C43DE00D9C6CD /* ViewController.swift in Sources */,
+				A0D0431626247D7E00E6F6B7 /* HomeVC.swift in Sources */,
 				829A157D261C43DE00D9C6CD /* AppDelegate.swift in Sources */,
 				829A157F261C43DE00D9C6CD /* SceneDelegate.swift in Sources */,
 			);
@@ -288,6 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Learn iOS Pattern MVC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Learn iOS Pattern MVC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
